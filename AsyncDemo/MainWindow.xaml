@@ -1,0 +1,16 @@
+﻿<Window x:Class="AsyncDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AsyncDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="Run_Sync" Content="Run Normal" HorizontalAlignment="Center" Height="58" Margin="0,10,0,0" VerticalAlignment="Top" Width="780" FontSize="24" Click="Run_Sync_Click"/>
+        <Button x:Name="Run_Async" Content="Run Async" Margin="10,73,10,290" FontSize="24" Click="Run_Async_Click"/>
+        <TextBlock x:Name="resultsWindow" HorizontalAlignment="Center" Margin="0,217,0,10" Text="Result Window" TextWrapping="Wrap" Width="780" FontSize="18"/>
+        <Button x:Name="Run_ParallelAsync" Content="Run Parallel Async" HorizontalAlignment="Center" Height="68" Margin="0,149,0,0" VerticalAlignment="Top" Width="780" FontSize="24" Click="Run_ParallelAsync_Click"/>
+
+    </Grid>
+</Window>
